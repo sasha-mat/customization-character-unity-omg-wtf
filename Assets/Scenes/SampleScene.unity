@@ -995,7 +995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &674600395
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 684714380}
   - component: {fileID: 684714379}
   m_Layer: 0
-  m_Name: face 2
+  m_Name: eye 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2029,7 +2029,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1229619461}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1229619460}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1229619461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2580,7 +2592,7 @@ GameObject:
   - component: {fileID: 1602901079}
   - component: {fileID: 1602901078}
   m_Layer: 0
-  m_Name: face 1
+  m_Name: eye 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2836,7 +2848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1862463254
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2951,6 +2963,7 @@ GameObject:
   - component: {fileID: 1925476779}
   - component: {fileID: 1925476778}
   - component: {fileID: 1925476777}
+  - component: {fileID: 1925476781}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3043,6 +3056,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1925476781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925476776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a82d70b0ac698489d8725b4a7d12a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipeyes: {fileID: 1229619460}
+  tipmounth: {fileID: 544064630}
+  viboreye1: {fileID: 1588889249}
+  viboreye2: {fileID: 1287968422}
+  vibormounth1: {fileID: 1862463255}
+  vibormounth2: {fileID: 674600396}
+  eye1: {fileID: 1602901076}
+  eye2: {fileID: 684714377}
+  mounth1: {fileID: 1642196537}
+  mounth2: {fileID: 1952475742}
 --- !u!1 &1952475742
 GameObject:
   m_ObjectHideFlags: 0
