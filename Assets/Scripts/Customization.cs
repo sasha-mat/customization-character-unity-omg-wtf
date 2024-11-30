@@ -13,7 +13,6 @@ public class Customization : MonoBehaviour
     [SerializeField] private GameObject mounth1;
     [SerializeField] private GameObject mounth2;
     [SerializeField] private GameObject prefabigrok;
-    public string prefabName = "NewIgrok";
 
     public void viboreye()
     {
@@ -59,7 +58,7 @@ public class Customization : MonoBehaviour
     {
         if (prefabigrok != null)
         {
-            string path = "Assets/Prefabs/" + prefabName + ".prefab";
+            string path = "Assets/Prefabs/" + "NewIgrok" + ".prefab";
             PrefabUtility.SaveAsPrefabAsset(prefabigrok, path);
         }
     }       
