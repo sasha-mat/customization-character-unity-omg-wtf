@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEditor;
 
 public class Customization : MonoBehaviour
@@ -29,6 +28,18 @@ public class Customization : MonoBehaviour
         viboreye1.SetActive(false);
         viboreye2.SetActive(false);
     }
+
+
+    
+    //public void Change(GameObject select)
+    //{
+        //foreach (GameObject go in massiv)
+        //{
+           // go.SetActive(false);
+        //}
+
+        //select.SetActive(true);
+    //}
     
     public void oneye1()
     {
