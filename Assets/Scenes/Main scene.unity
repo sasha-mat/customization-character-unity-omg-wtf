@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 544064631}
   - component: {fileID: 544064630}
   m_Layer: 5
-  m_Name: Button Tip mouth
+  m_Name: Button mouths
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1790,7 +1790,7 @@ GameObject:
   - component: {fileID: 1229619461}
   - component: {fileID: 1229619460}
   m_Layer: 5
-  m_Name: Button Tip eyes
+  m_Name: Button eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
