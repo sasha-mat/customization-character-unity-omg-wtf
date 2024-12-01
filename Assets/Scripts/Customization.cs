@@ -3,74 +3,54 @@ using UnityEditor;
 
 public class Customization : MonoBehaviour
 {
-    [SerializeField] private GameObject viboreye1;
-    [SerializeField] private GameObject viboreye2;
-    [SerializeField] private GameObject vibormounth1;
-    [SerializeField] private GameObject vibormounth2;
-    [SerializeField] private GameObject eye1;
-    [SerializeField] private GameObject eye2;
-    [SerializeField] private GameObject mounth1;
-    [SerializeField] private GameObject mounth2;
-    [SerializeField] private GameObject prefabigrok;
+    [SerializeField] private GameObject choiceeye1;
+    [SerializeField] private GameObject choiceeye2;
+    [SerializeField] private GameObject choicemounth1;
+    [SerializeField] private GameObject choicemounth2;
+    [SerializeField] private GameObject prefabplayer;
+    [SerializeField] private GameObject[] eye;
+    [SerializeField] private GameObject[] mounth;
 
-    public void viboreye()
+    public void Eyes()
     {
-        viboreye1.SetActive(true);
-        viboreye2.SetActive(true);
-        vibormounth1.SetActive(false);
-        vibormounth2.SetActive(false);
+        choiceeye1.SetActive(true);
+        choiceeye2.SetActive(true);
+        choicemounth1.SetActive(false);
+        choicemounth2.SetActive(false);
     }
 
-    public void vibormounth()
+    public void Mounths()
     {
-        vibormounth1.SetActive(true);
-        vibormounth2.SetActive(true);
-        viboreye1.SetActive(false);
-        viboreye2.SetActive(false);
-    }
-
-
-    
-    //public void Change(GameObject select)
-    //{
-        //foreach (GameObject go in massiv)
-        //{
-           // go.SetActive(false);
-        //}
-
-        //select.SetActive(true);
-    //}
-    
-    public void oneye1()
-    {
-        eye1.SetActive(true);
-        eye2.SetActive(false);
-    }
-
-    public void oneye2()
-    {
-        eye1.SetActive(false);
-        eye2.SetActive(true);
+        choicemounth1.SetActive(true);
+        choicemounth2.SetActive(true);
+        choiceeye1.SetActive(false);
+        choiceeye2.SetActive(false);
     }
     
-    public void onmounth1()
+    public void ChangeEye(GameObject select)
     {
-        mounth1.SetActive(true);
-        mounth2.SetActive(false);
+        foreach (GameObject go in eye)
+        {
+            go.SetActive(false);
+        }
+        select.SetActive(true);
     }
 
-    public void onmounth2()
+    public void ChangeMounth(GameObject select)
     {
-        mounth1.SetActive(false);
-        mounth2.SetActive(true);
+        foreach (GameObject go in mounth)
+        {
+            go.SetActive(false);
+        }
+        select.SetActive(true);
     }
 
     public void sohraneniye()
     {
-        if (prefabigrok != null)
+        if (prefabplayer != null)
         {
-            string path = "Assets/Prefabs/" + "NewIgrok" + ".prefab";
-            PrefabUtility.SaveAsPrefabAsset(prefabigrok, path);
+            string path = "Assets/Prefabs/" + "NewPlayer" + ".prefab";
+            PrefabUtility.SaveAsPrefabAsset(prefabplayer, path);
         }
     }       
 }
