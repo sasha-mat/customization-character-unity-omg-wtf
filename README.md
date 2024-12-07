@@ -8,4 +8,5 @@
 
 Пример работы:
 
-![2024-11-30 14-20-09](https://github.com/user-attachments/assets/6391e0e0-c3d8-451c-9297-f1b0e2c2cea7)
+
+![2024-12-07 15-33-53 (1)](https://github.com/user-attachments/assets/289b9b2a-12de-403e-9685-7f453834979d)
