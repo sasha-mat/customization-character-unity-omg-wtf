@@ -60,11 +60,6 @@ public class Customization : MonoBehaviour
             go.SetActive(false);
         }
         select.SetActive(true);
-        foreach (GameObject go in galochkamouth)
-        {
-            go.SetActive(false);
-        }
-        select.SetActive(true);
     }
 
     public void GalochkaMouth(GameObject select)
