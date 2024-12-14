@@ -713,6 +713,7 @@ GameObject:
   - component: {fileID: 544064632}
   - component: {fileID: 544064631}
   - component: {fileID: 544064630}
+  - component: {fileID: 544064633}
   m_Layer: 5
   m_Name: Button mouths
   m_TagString: Untagged
@@ -784,19 +785,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 544064631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: Mounths
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &544064631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,6 +824,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544064628}
   m_CullTransparentMesh: 1
+--- !u!114 &544064633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544064628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c9ceb1065b2724298296f0d2645238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabButtons:
+  - {fileID: 1862463258}
+  - {fileID: 674600399}
+  tabIdle: {fileID: 0}
+  tabHover: {fileID: 0}
+  tabActive: {fileID: 0}
+  selectedTab: {fileID: 0}
+  objectsToSwap:
+  - {fileID: 1862463253}
+  - {fileID: 674600394}
 --- !u!1 &630214104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1130,7 @@ GameObject:
   - component: {fileID: 674600398}
   - component: {fileID: 674600397}
   - component: {fileID: 674600396}
+  - component: {fileID: 674600399}
   m_Layer: 5
   m_Name: Button choice mouth 2
   m_TagString: Untagged
@@ -1190,31 +1202,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 674600397}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: ChangeMounth
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1952475742}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: GalochkaMouth
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 304751846}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &674600397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,6 +1241,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674600394}
   m_CullTransparentMesh: 1
+--- !u!114 &674600399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674600394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabGroup: {fileID: 544064633}
+  background: {fileID: 745012821}
 --- !u!1 &684714377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6240218649880709171, guid: d2177b26ffda9db46a42d02ae3efec19, type: 3}
@@ -1308,7 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.50980395}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.47058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2178,6 +2180,7 @@ GameObject:
   - component: {fileID: 1229619462}
   - component: {fileID: 1229619461}
   - component: {fileID: 1229619460}
+  - component: {fileID: 1229619463}
   m_Layer: 5
   m_Name: Button eyes
   m_TagString: Untagged
@@ -2249,19 +2252,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1229619461}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: Eyes
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1229619461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,6 +2291,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229619458}
   m_CullTransparentMesh: 1
+--- !u!114 &1229619463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229619458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c9ceb1065b2724298296f0d2645238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabButtons:
+  - {fileID: 1588889252}
+  - {fileID: 1287968425}
+  tabIdle: {fileID: 0}
+  tabHover: {fileID: 0}
+  tabActive: {fileID: 0}
+  selectedTab: {fileID: 0}
+  objectsToSwap:
+  - {fileID: 1588889247}
+  - {fileID: 1287968420}
 --- !u!1 &1249270376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,13 +2461,14 @@ GameObject:
   - component: {fileID: 1287968424}
   - component: {fileID: 1287968423}
   - component: {fileID: 1287968422}
+  - component: {fileID: 1287968425}
   m_Layer: 5
   m_Name: Button choice eye 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1287968421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2473,7 +2487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 531, y: 0}
+  m_AnchoredPosition: {x: 480, y: 0}
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1287968422
@@ -2519,31 +2533,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1287968423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: ChangeEye
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 684714377}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: GalochkaEye
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1067474363}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1287968423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,6 +2572,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287968420}
   m_CullTransparentMesh: 1
+--- !u!114 &1287968425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287968420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabGroup: {fileID: 1229619463}
+  background: {fileID: 745012821}
 --- !u!1 &1386865345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,13 +2731,14 @@ GameObject:
   - component: {fileID: 1588889251}
   - component: {fileID: 1588889250}
   - component: {fileID: 1588889249}
+  - component: {fileID: 1588889252}
   m_Layer: 5
   m_Name: Button choice eye 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1588889248
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2752,7 +2757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: 0}
+  m_AnchoredPosition: {x: 120, y: 0}
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588889249
@@ -2798,31 +2803,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1588889250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: ChangeEye
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1602901076}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: GalochkaEye
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1031295959}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1588889250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2861,6 +2842,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588889247}
   m_CullTransparentMesh: 1
+--- !u!114 &1588889252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588889247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabGroup: {fileID: 1229619463}
+  background: {fileID: 745012821}
 --- !u!1 &1602901076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7493131640424108983, guid: d2177b26ffda9db46a42d02ae3efec19, type: 3}
@@ -2958,6 +2953,7 @@ GameObject:
   - component: {fileID: 1862463257}
   - component: {fileID: 1862463256}
   - component: {fileID: 1862463255}
+  - component: {fileID: 1862463258}
   m_Layer: 5
   m_Name: Button choice mouth 1
   m_TagString: Untagged
@@ -3029,31 +3025,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1862463256}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: ChangeMounth
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1642196537}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1925476781}
-        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
-        m_MethodName: GalochkaMouth
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 461104040}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1862463256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3092,6 +3064,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862463253}
   m_CullTransparentMesh: 1
+--- !u!114 &1862463258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862463253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabGroup: {fileID: 544064633}
+  background: {fileID: 745012821}
 --- !u!1 &1925476776
 GameObject:
   m_ObjectHideFlags: 0
