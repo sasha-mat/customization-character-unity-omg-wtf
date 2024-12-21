@@ -128,6 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262567406}
+  - component: {fileID: 262567407}
   m_Layer: 5
   m_Name: Mouths
   m_TagString: Untagged
@@ -157,6 +158,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &262567407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262567405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c9ceb1065b2724298296f0d2645238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabButtons:
+  - {fileID: 544064633}
+  - {fileID: 1862463258}
+  - {fileID: 674600399}
+  tabIdle: {fileID: 0}
+  tabHover: {fileID: 0}
+  tabActive: {fileID: 0}
+  selectedTab: {fileID: 544064633}
+  objectsToSwap:
+  - {fileID: 1862463253}
+  - {fileID: 674600394}
 --- !u!1 &304751846
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,19 +857,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 544064628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30c9ceb1065b2724298296f0d2645238, type: 3}
+  m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabButtons:
-  - {fileID: 1862463258}
-  - {fileID: 674600399}
-  tabIdle: {fileID: 0}
-  tabHover: {fileID: 0}
-  tabActive: {fileID: 0}
-  selectedTab: {fileID: 0}
-  objectsToSwap:
-  - {fileID: 1862463253}
-  - {fileID: 674600394}
+  tabGroup: {fileID: 262567407}
+  background: {fileID: 0}
 --- !u!1 &630214104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,7 +1218,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 674600397}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925476781}
+        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
+        m_MethodName: ChangeMounth
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1952475742}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &674600397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,8 +1281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabGroup: {fileID: 544064633}
-  background: {fileID: 745012821}
+  tabGroup: {fileID: 262567407}
+  background: {fileID: 0}
 --- !u!1 &684714377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6240218649880709171, guid: d2177b26ffda9db46a42d02ae3efec19, type: 3}
@@ -1717,6 +1745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1011020850}
+  - component: {fileID: 1011020851}
   m_Layer: 5
   m_Name: Eyes
   m_TagString: Untagged
@@ -1746,6 +1775,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1011020851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011020849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c9ceb1065b2724298296f0d2645238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabButtons:
+  - {fileID: 1229619463}
+  - {fileID: 1588889252}
+  - {fileID: 1287968425}
+  tabIdle: {fileID: 0}
+  tabHover: {fileID: 0}
+  tabActive: {fileID: 0}
+  selectedTab: {fileID: 1229619463}
+  objectsToSwap:
+  - {fileID: 1588889247}
+  - {fileID: 1287968420}
 --- !u!1 &1031295959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,19 +2352,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229619458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30c9ceb1065b2724298296f0d2645238, type: 3}
+  m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabButtons:
-  - {fileID: 1588889252}
-  - {fileID: 1287968425}
-  tabIdle: {fileID: 0}
-  tabHover: {fileID: 0}
-  tabActive: {fileID: 0}
-  selectedTab: {fileID: 0}
-  objectsToSwap:
-  - {fileID: 1588889247}
-  - {fileID: 1287968420}
+  tabGroup: {fileID: 1011020851}
+  background: {fileID: 0}
 --- !u!1 &1249270376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,7 +2577,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1287968423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925476781}
+        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
+        m_MethodName: ChangeEye
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 684714377}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1287968423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2584,8 +2640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabGroup: {fileID: 1229619463}
-  background: {fileID: 745012821}
+  tabGroup: {fileID: 1011020851}
+  background: {fileID: 0}
 --- !u!1 &1386865345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2803,7 +2859,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1588889250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925476781}
+        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
+        m_MethodName: ChangeEye
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1602901076}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1588889250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2854,8 +2922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabGroup: {fileID: 1229619463}
-  background: {fileID: 745012821}
+  tabGroup: {fileID: 1011020851}
+  background: {fileID: 0}
 --- !u!1 &1602901076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7493131640424108983, guid: d2177b26ffda9db46a42d02ae3efec19, type: 3}
@@ -3025,7 +3093,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1862463256}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1925476781}
+        m_TargetAssemblyTypeName: Customization, Assembly-CSharp
+        m_MethodName: ChangeMounth
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1642196537}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1862463256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3076,8 +3156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd174c6b1f0a982449d4837aabe54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabGroup: {fileID: 544064633}
-  background: {fileID: 745012821}
+  tabGroup: {fileID: 262567407}
+  background: {fileID: 0}
 --- !u!1 &1925476776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,14 +3287,10 @@ MonoBehaviour:
   mounth:
   - {fileID: 1642196537}
   - {fileID: 1952475742}
-  galochkachoiceeyes: {fileID: 2044363123}
-  galochkachoicemouths: {fileID: 1715736348}
-  galochkaeye:
-  - {fileID: 1031295959}
-  - {fileID: 1067474363}
-  galochkamouth:
-  - {fileID: 461104040}
-  - {fileID: 304751846}
+  galochkachoiceeyes: {fileID: 0}
+  galochkachoicemouths: {fileID: 0}
+  galochkaeye: []
+  galochkamouth: []
 --- !u!1 &1952475742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1585786266688893310, guid: d2177b26ffda9db46a42d02ae3efec19, type: 3}
