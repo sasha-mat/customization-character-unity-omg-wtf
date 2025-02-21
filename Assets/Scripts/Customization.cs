@@ -10,15 +10,11 @@ public class Customization : MonoBehaviour
     [SerializeField] private GameObject prefabplayer;
     [SerializeField] private GameObject[] eye;
     [SerializeField] private GameObject[] mounth;
-    [SerializeField] private GameObject galochkachoiceeyes;
-    [SerializeField] private GameObject galochkachoicemouths;
-    [SerializeField] private GameObject[] galochkaeye;
-    [SerializeField] private GameObject[] galochkamouth;
+    [SerializeField] private GameObject[] sIndicatorEye;
+    [SerializeField] private GameObject[] sIndicatorMouth;
 
     public void Eyes()
     {
-        galochkachoiceeyes.SetActive(true);
-        galochkachoicemouths.SetActive(false);
         choiceeye1.SetActive(true);
         choiceeye2.SetActive(true);
         choicemouth1.SetActive(false);
@@ -27,8 +23,6 @@ public class Customization : MonoBehaviour
 
     public void Mounths()
     {
-        galochkachoiceeyes.SetActive(false);
-        galochkachoicemouths.SetActive(true);
         choicemouth1.SetActive(true);
         choicemouth2.SetActive(true);
         choiceeye1.SetActive(false);
@@ -44,9 +38,9 @@ public class Customization : MonoBehaviour
         select.SetActive(true);
     }
 
-    public void GalochkaEye(GameObject select)
+    public void SelectEye(GameObject select)
     {
-        foreach (GameObject go in galochkaeye)
+        foreach (GameObject go in sIndicatorEye)
         {
             go.SetActive(false);
         }
@@ -62,16 +56,16 @@ public class Customization : MonoBehaviour
         select.SetActive(true);
     }
 
-    public void GalochkaMouth(GameObject select)
+    public void SelectMouth(GameObject select)
     {
-        foreach (GameObject go in galochkamouth)
+        foreach (GameObject go in sIndicatorMouth)
         {
             go.SetActive(false);
         }
         select.SetActive(true);
     }
 
-    public void sohraneniye()
+    public void SavePrefab()
     {
         if (prefabplayer != null)
         {
