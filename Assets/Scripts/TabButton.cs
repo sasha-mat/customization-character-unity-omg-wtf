@@ -29,10 +29,4 @@ public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         background = GetComponent<Image>();
         tabGroup.Subscribe(this);
     }
-
-    
-    void Update()
-    {
-        
-    }
 }
